@@ -1,0 +1,200 @@
+.footer{
+  padding-top: 60px;
+  padding-bottom: 30px;
+  background:  #ccc8c8c2;
+}
+/*img{
+
+  border-radius: 50px;
+}*/
+.footer_text{
+  line-height: 30px;
+  color: #111;
+
+}
+.footer_quick-links ul li{
+  background: transparent !important;
+}
+.footer_quick-links ul li a{
+  color:#111;
+
+}
+.quick_links-title{
+  margin-bottom: 20px;
+  color: #111;
+  font-size: 1.1rem;
+}
+.footer_contact li span, .footer_contact li p{
+  color: #111;
+}
+.footer_contact li span{
+  font-style: 1.2rem;
+}
+.footer_contact li p{
+  font-size: 0.9rem;
+}
+.footer_copyright{
+  color: #111;
+  font-size: 0.9rem;
+  /*margin-top: 50px;*/
+  
+
+}
+/*.wp {
+position: absolute;
+right:-50%;
+
+
+
+}
+.wp img {
+  animation: fadeIn 3s ease-in;
+  height: 100px;
+ position:relative;
+ 
+   
+}*/
+.wp {
+  position: fixed;
+  right: 0;
+  bottom: 0; /* Adjust this value based on your layout */
+  z-index: 1000;
+}
+
+/*.wp img {
+  animation: fadeIn 3s ease-in;
+  height: 80px; 
+  width: 80px; 
+  position: relative;
+  cursor: pointer;
+  
+}*/
+/* Define a blink animation */
+@keyframes blink {
+0%, 50%, 100% {
+  opacity: 1;
+}
+25%, 75% {
+  opacity: 0;
+}
+}
+
+.dev{
+
+  margin-left: 800px;
+  position: relative;
+  top:-10px;
+
+}
+
+.footer_copyright{
+
+  margin-right: 800px;
+  margin-left: 10px;
+  position: relative;
+  top: 20px;
+  
+}
+
+
+
+
+/* Apply the blink animation to images with class .wp */
+.wp img {
+animation: fadeIn 3s ease-in, blink 1s infinite; /* Combine fadeIn and blink animations */
+height: 80px; /* Adjust the height as needed */
+width: 80px; /* Adjust the width as needed */
+position: relative;
+cursor: pointer;
+/* You can adjust the animation duration and easing as needed */
+}
+
+.fb {
+  position: fixed;
+  left: 0;
+  bottom: 0; /* Adjust this value based on your layout */
+}
+
+
+.fb img {
+  animation: fadeIn 3s ease-in;
+  height: 80px; /* Adjust the height as needed */
+  width: 120px; /* Adjust the width as needed */
+  position: relative;
+  cursor: pointer;
+  /* You can adjust the animation duration and easing as needed */
+}
+p{
+  color: #111;
+  
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*.enco img{
+  margin-top: 100px;
+}*/
+.footer_quick-links i{
+
+color: #111;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .wp {
+    position: absolute;
+    right: -7%; 
+   
+  }
+  .enco img{
+    height: 80px;
+    width: 105px;
+
+  }
+  .dev {
+    font-size: 12px;
+    margin-left:70px;
+    
+  }
+}
+
+
+ 
+
+
+
+@media screen and (max-width: 600px) {
+  .footer_copyright {
+    font-size: 12px;
+  }
+  .dev {
+    font-size: 12px;
+    margin-left:100px;
+    
+  }
+}
+
+
+
+
+
+
+
+
